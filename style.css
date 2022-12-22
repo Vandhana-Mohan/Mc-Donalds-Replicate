@@ -1,5 +1,6 @@
 body{
-    background-color: lightyellow;
+    background-color:#FFC72C;
+    font-family:Verdana, sans-serif;
 }
 
 .sideMenu{
@@ -20,7 +21,7 @@ body{
  
  .primary-content {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 10fr;
     grid-template-rows: 100%;
    } 
    
@@ -32,10 +33,9 @@ body{
    .menu {
       display: grid;
       justify-content: center;
-      font-size: larger;
+      font-size: large;
       font-weight: bold;
       font-style: italic;
-      font-family: ;
    }
   
    .header {
@@ -63,8 +63,7 @@ body{
    }
   
    .sidebar {
-    background: #2d2d2d;
-    color: white;
+    background: #27251F;
     text-align: center;
    }
   
