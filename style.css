@@ -4,7 +4,7 @@ body{
 
 .sideMenu{
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(1fr);
     gap: 1px;
 }
 
@@ -75,12 +75,12 @@ body{
    }
   
    .footer {
-    background: #FFC72C;
+    background: #DA291C;
     padding: 10px;
     text-align: center;
+    width:auto;
    }
 
    header{
     font-size: xx-large;
-
    }
