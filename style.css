@@ -94,7 +94,7 @@ header{
   
   .title-heading{
     animation-name: move-title;
-    animation-duration: 5s;
+    animation-duration: 15s;
     animation-direction:normal;
     animation-timing-function:ease-in-out;
     animation-iteration-count: infinite;
@@ -115,15 +115,14 @@ header{
     overflow:hidden;
     margin-top: 10px;
     margin-bottom: 10px;
-    border-bottom: 2px solid royalblue;
   }
   
   .animate-slide{
     animation-name: slidein-text;
-    animation-duration: 30s;
+    animation-duration: 65s;
     animation-direction:alternate-reverse;
     animation-iteration-count: infinite;
-    animation-delay:2s;
+    /* animation-delay:2s; */
     width: 300%;
     height:100%;
   }
@@ -150,7 +149,7 @@ header{
     float:left;
     text-align: center;
     color:black;
-    background-color:rebeccapurple;
+    background-color:#ff5349;
     width: 33%;
     height: 100%;
   }
@@ -158,7 +157,7 @@ header{
   .slide-two{
     float:left;
     text-align: center;
-    background-color:black;
+    background-color:lemonchiffon;
     width: 33%;
     height: 100%;
   }
@@ -167,7 +166,7 @@ header{
     float:left;
     text-align: center;
     color:black;
-    background-color:salmon;
+    background-color:red;
     width: 33%;
     height: 100%;
   }
