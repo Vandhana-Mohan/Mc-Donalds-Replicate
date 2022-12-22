@@ -3,17 +3,16 @@ body{
     font-family:Verdana, sans-serif;
 }
 
-.sideMenu{
+/* .sideMenu{
     display: grid;
     grid-template-columns: repeat(1fr);
     gap: 1px;
-}
+}  */
 
 .sideMenu li {
     list-style: none;
     padding: 10px;
     margin: 10px;
-    /* border: 1px solid grey; */
     width:250px;
     color: black;
     font-size: large;
@@ -28,6 +27,9 @@ body{
 .logo {
     display:grid;
     grid-template-rows: 5px;
+    margin-left:2%;
+    margin-top:2%;
+    float: left;
 }
   
 .menu {
@@ -43,9 +45,13 @@ body{
 }
   
 .logo img {
-    height: 50px;
     margin: 15px 0 0 15px;
     width: auto;
+    height: 30px;
+    animation-name: fadein-text;
+    animation-duration: 20s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
 }
   
 .menu ul {
@@ -78,8 +84,90 @@ body{
     padding: 10px;
     text-align: center;
     width:auto;
+    font-size: 15px;
+    font-family: cursive;
 }
 
 header{
     font-size: xx-large;
 }
+  
+  .title-heading{
+    animation-name: move-title;
+    animation-duration: 5s;
+    animation-direction:normal;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+    position: relative;
+  }
+  
+  @keyframes move-title{
+    0% {transform: rotate3d(18, 2.0, 3.0, 360deg)}
+  }
+  
+  @keyframes fadein-text {
+     0% {transform: scale(0.5) translate(-25%, -25%);}
+  }
+  
+  .main-block{
+    width:100%;
+    height: 50px;
+    overflow:hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid royalblue;
+  }
+  
+  .animate-slide{
+    animation-name: slidein-text;
+    animation-duration: 30s;
+    animation-direction:alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-delay:2s;
+    width: 300%;
+    height:100%;
+  }
+  
+  @keyframes slidein-text {
+    0%  {margin-left:  0px;}
+    25% {margin-left: -175%;}
+    50% {margin-left: -200%;}
+    75% {margin-left: 150%;}
+    100% {margin-left: 200%;}
+  }
+  
+  .slide-three > p{
+      font-size: 20px;
+      font-family: monospace;
+  }
+  
+  .slide-one > p{
+      font-size: 20px;
+      font-family: monospace;
+  }
+  
+  .slide-three{
+    float:left;
+    text-align: center;
+    color:black;
+    background-color:rebeccapurple;
+    width: 33%;
+    height: 100%;
+  }
+  
+  .slide-two{
+    float:left;
+    text-align: center;
+    background-color:black;
+    width: 33%;
+    height: 100%;
+  }
+  
+  .slide-one{
+    float:left;
+    text-align: center;
+    color:black;
+    background-color:salmon;
+    width: 33%;
+    height: 100%;
+  }
